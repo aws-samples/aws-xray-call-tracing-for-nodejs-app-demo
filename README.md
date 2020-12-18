@@ -172,3 +172,6 @@ While this example is very simplistic and the issue was known in advance because
 ## Summary
 In this demo, you demonstrated how to use AWS X-Ray to trace API calls for a nodejs application which allows a client to send a GET request and retrieve data from a backend Amazon Aurora serverless database. AWS X-Ray helped isolate quickly and easily slow requests thereby enabling DevOps team to fix the issue very quickly.
 
+## Licence
+This library is licensed under the MIT-0 License. See the LICENSE file.
+
