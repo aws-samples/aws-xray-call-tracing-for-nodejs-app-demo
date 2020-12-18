@@ -119,17 +119,22 @@ You also need to create an IAM role to allow the EC2 of your Cloud9 instance to 
 Start the demo application either by pressing the green run button in AWS Cloud9 or run the following command: `nodemon index.js`
 You should see the output shown in the screenshot below:
 
-![alt text](img/startapp.png)
+<p align="left">
+  <img width="500" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/startapp.png">
+</p>
 
 Now run the following command to send an API GET request to the app in order to query the database
 
 `curl http://localhost:8080/customers | json`. You should see the output shown in the screenshot below:
-
-![alt text](img/normalrequest.png)
+<p align="left">
+  <img width="500" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/normalrequest.png">
+</p>
 
 In AWS X-Ray console you can trace your request which should look like the one shown in the screenshot below:
 
-![alt text](img/xray1.png)
+<p align="left">
+  <img width="500" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/xray1.png">
+</p>
 
 Now let's add some bad code to the application to mimic a scenario that could happen in a production system whereby an application could start to experience performance issue which could impact end-users experience. And when this app the DevOps team need to try to identify the root cause of the performance issue quickly to be able to fix it and this is where AWS X-Ray comes very handy.
 
@@ -144,15 +149,21 @@ Now replace the contents of `index.js` with the ones from `index-with-bad-code.j
 
 Notice that your application will pause for 10 sec which can be seen in the screenshot below under Time Spent or Time Total column.
 
-![alt text](img/slowrequest.png)
+<p align="left">
+  <img width="500" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/slowrequest.png">
+</p>
 
 You can trace the problematic request from your AWS X-Ray console and from the screenshot below we see that the delay occurs when the app server tries to connect to the database which corresponds to the 10 sec sleep you added in the code. 
 
-![alt text](img/xray2.png)
+<p align="left">
+  <img width="500" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/xray2.png">
+</p>
 
 You can zoom in on the problematic layer (database in this case) to see the response time distrubution over a period of time (e.g. last hour) as shown in the screenshot below.
 
-![alt text](img/xray6.png)
+<p align="left">
+  <img width="500" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/xray6.png">
+</p>
 
 Please refer to the AWS X-Ray [online documentation](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-analytics.html) for more details on what data can be captured and analyzed from AWS X-Ray Analytics.
 
