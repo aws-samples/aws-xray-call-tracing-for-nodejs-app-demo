@@ -43,7 +43,9 @@ More details on [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager
 
 		CREATE DATABASE <replace-with-your-db-instance-name>;
 
-![alt text](img/queryeditor.png)
+<p align="left">
+  <img width="500" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/queryeditor.png">
+</p>
 
 - Run the following SQL query as shown in the screenhot below to create a `customers` table in your db instance:
 
