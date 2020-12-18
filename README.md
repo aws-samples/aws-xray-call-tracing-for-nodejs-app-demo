@@ -120,7 +120,7 @@ Start the demo application either by pressing the green run button in AWS Cloud9
 You should see the output shown in the screenshot below:
 
 <p align="left">
-  <img width="500" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/startapp.png">
+  <img width="400" height="250" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/startapp.png">
 </p>
 
 Now run the following command to send an API GET request to the app in order to query the database
