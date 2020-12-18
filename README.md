@@ -110,9 +110,9 @@ You could also Capture SQL queries using the code below:
 	var connection = mysql.createConnection(config);
 
 ## Assign the required IAM permissions to EC2 instance of Cloud9
-In order the underlying EC2 for your AWS Cloud9 environment to be able to connect to your database, your need to make sure that you add an inbound rule in your Aurora DB cluster to allow the IP address of the EC2 for Cloud9 to connect to the DB on port 3306. More details on how to work with Security groups can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html)
+In order the underlying EC2 for your AWS Cloud9 environment to be able to connect to your database, your need to make sure that you add an inbound rule in your Aurora DB cluster to allow the IP address of the EC2 for Cloud9 to connect to the DB on port 3306. More details on how to work with Security groups can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html).
 
-You also need to create an IAM role to allow the EC2 of your Cloud9 instance to access AWS X-Ray. For details on how to add an IAM role to Amazon EC2 instance can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html)
+You also need to create an IAM role to allow the EC2 of your Cloud9 instance to access AWS X-Ray. For details on how to add an IAM role to Amazon EC2 instance can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html).
 
 ## Testing your application
 
