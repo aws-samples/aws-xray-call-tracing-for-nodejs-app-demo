@@ -169,6 +169,8 @@ Please refer to the AWS X-Ray [online documentation](https://docs.aws.amazon.com
 
 While this example is very simplistic and the issue was known in advance because you  manually added some bad code to your code source, in a production environment where customers generally have many microservices applications talking to each other including making external call to SaaS applications, trying to isolate the root cause of performance problem is a bit like trying to find a needle in a haystack. AWS X-Ray is able to open up the black box of your complex application ecosystem for your and point your to the root cause of issue so that you can fix it very quickly without the end-users even noticing it.
 
+Please remember to clean up all AWS resources deployed as part of this demo!
+
 ## Summary
 In this demo, you demonstrated how to use AWS X-Ray to trace API calls for a nodejs application which allows a client to send a GET request and retrieve data from a backend Amazon Aurora serverless database. AWS X-Ray helped isolate quickly and easily slow requests thereby enabling DevOps team to fix the issue very quickly.
 
