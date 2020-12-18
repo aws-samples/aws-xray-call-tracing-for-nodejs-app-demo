@@ -133,7 +133,7 @@ Now run the following command to send an API GET request to the app in order to 
 In AWS X-Ray console you can trace your request which should look like the one shown in the screenshot below:
 
 <p align="left">
-  <img width="700" height="500" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/xray1.png">
+  <img width="800" height="500" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/xray1.png">
 </p>
 
 Now let's add some bad code to the application to mimic a scenario that could happen in a production system whereby an application could start to experience performance issue which could impact end-users experience. And when this app the DevOps team need to try to identify the root cause of the performance issue quickly to be able to fix it and this is where AWS X-Ray comes very handy.
@@ -156,7 +156,7 @@ Notice that your application will pause for 10 sec which can be seen in the scre
 You can trace the problematic request from your AWS X-Ray console and from the screenshot below we see that the delay occurs when the app server tries to connect to the database which corresponds to the 10 sec sleep you added in the code. 
 
 <p align="left">
-  <img width="700" height="500" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/xray2.png">
+  <img width="800" height="500" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/xray2.png">
 </p>
 
 You can zoom in on the problematic layer (database in this case) to see the response time distrubution over a period of time (e.g. last hour) as shown in the screenshot below.
