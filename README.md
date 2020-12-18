@@ -35,7 +35,9 @@ More details on [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager
 
 - Use the query editor to connect to your db cluster using the secret you created in step 3 as shown in the screenshot below
 
-![alt text](img/connecttoaurora.png)
+<p align="left">
+  <img width="600" height="300" src="https://github.com/aws-samples/aws-xray-call-tracing-for-nodejs-app-demo/blob/main/img/connecttoaurora.png">
+</p>
 
 - Run the following SQL query to create your db instance:
 
